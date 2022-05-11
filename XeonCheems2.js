@@ -4262,6 +4262,13 @@ break
                 XeonBotInc.sendMessage(m.chat, { image: { url: result }, caption: ' Media Url : '+result }, { quoted: m })
             }
             break	
+		case 'sexy': case 'hentai': case 'loli':{
+	anu = `Sange Kok Sama Anime Pffff🤭`
+	templateMessage: 
+	hydratedContentText: anu,
+	XeonBotInc.sendMessage(m.chat, { text: anu, }, { quoted: m })
+                }
+	break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return reply(mess.owner)
