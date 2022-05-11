@@ -4252,6 +4252,16 @@ Xeon (Me)
 My family
 And All Friends Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton": {"displayText": "Web Gwehj","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
+	
+            case 'pin': {
+            	 if (!isCreator) return replay(`${mess.owner}`)
+                reply(mess.wait)
+		let { pinterest } = require('./lib/scraper')
+                anu = await pinterest(text)
+                result = anu[Math.floor(Math.random() * anu.length)]
+                XeonBotInc.sendMessage(m.chat, { image: { url: result }, caption: ' Media Url : '+result }, { quoted: m })
+            }
+            break	
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return reply(mess.owner)
