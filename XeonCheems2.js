@@ -4254,7 +4254,7 @@ And All Friends Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton"
 break
 	
             case 'pin': {
-            	 if (!isCreator) return replay(`${mess.owner}`)
+            	 
                 reply(mess.wait)
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
